@@ -1,0 +1,18 @@
+@mixin btn-basic(){
+	display: inline-block;
+	border-radius: 3px;
+	font-size: $font-size - 4;
+	font-weight: 500;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#fff;
+}
+
+@mixin clear(){
+	&::after{
+		content:'';
+		display: table;
+		clear: both;
+	}
+}
